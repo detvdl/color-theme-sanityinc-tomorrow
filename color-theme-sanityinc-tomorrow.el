@@ -118,8 +118,8 @@ executed."
              (aqua . "#99ffff")
              (blue . "#bbdaff")
              (purple . "#ebbbff")))
-    (bright . ((background . "#000000")
-               (alt-background . "#151515151515")
+    (bright . ((background . "#141414")
+               (alt-background . "#1f1f1f1f1f1f")
                (current-line . "#2a2a2a")
                (selection . "#424242")
                (foreground . "#eaeaea")
@@ -128,7 +128,7 @@ executed."
                (orange . "#e78c45")
                (yellow . "#e7c547")
                (green . "#b9ca4a")
-               (aqua . "#70c0b1")
+               (aqua . "#66d1cc")
                (blue . "#7aa6da")
                (purple . "#c397d8")))))
 
@@ -205,18 +205,18 @@ names to which it refers are bound."
       (line-number (:background ,low-contrast-bg :foreground ,comment))
       (line-number-current-line (:inherit line-number :foreground ,foreground :weight bold))
       (fill-column-indicator (:foreground ,contrast-bg :weight normal :slant normal
-                                          :underline nil :overline nil :strike-through nil
-                                          :box nil :inverse-video nil :stipple nil))
+                              :underline nil :overline nil :strike-through nil
+                              :box nil :inverse-video nil :stipple nil))
       (vertical-border (:foreground ,contrast-bg))
       (border (:background ,contrast-bg :foreground ,highlight))
       (highlight (:inverse-video nil :background ,highlight))
       (mode-line (:foreground ,foreground :background ,contrast-bg :weight normal
-                              :box (:line-width 1 :color ,contrast-bg)))
+                  :box (:line-width 1 :color ,contrast-bg)))
       (mode-line-buffer-id (:foreground ,purple :background nil))
       (mode-line-inactive (:inherit mode-line
-                                    :foreground ,comment
-                                    :background ,highlight
-                                    :weight normal))
+                           :foreground ,comment
+                           :background ,highlight
+                           :weight normal))
       (mode-line-emphasis (:foreground ,foreground :slant italic))
       (mode-line-highlight (:foreground ,purple :box nil :weight bold))
       (minibuffer-prompt (:foreground ,blue))
@@ -639,25 +639,25 @@ names to which it refers are bound."
       ;; tab-bar (built-in)
       (tab-bar (:height 1.2 :foreground ,comment :background ,highlight))
       (tab-bar-tab (:background ,contrast-bg
-                                :foreground ,purple
-                                :inverse-video nil
-                                :box (:line-width 1 :style released-button)))
+                    :foreground ,purple
+                    :inverse-video nil
+                    :box (:line-width 1 :style released-button)))
       (tab-bar-tab-inactive (:inherit tab-bar-tab
-                                      :background ,comment
-                                      :foreground ,highlight
-                                      :inverse-video t))
+                             :background ,comment
+                             :foreground ,highlight
+                             :inverse-video t))
 
       ;; tab-line (built-in)
       (tab-line (:foreground ,comment :background ,highlight))
       (tab-line-close-highlight (:foreground ,red))
       (tab-line-tab (:background ,contrast-bg
-                                 :foreground ,purple
-                                 :inverse-video nil
-                                 :box (:line-width 1 :style released-button)))
+                     :foreground ,purple
+                     :inverse-video nil
+                     :box (:line-width 1 :style released-button)))
       (tab-line-tab-inactive (:inherit tab-line-tab
-                                       :background ,comment
-                                       :foreground ,highlight
-                                       :inverse-video t))
+                              :background ,comment
+                              :foreground ,highlight
+                              :inverse-video t))
 
       ;; which-function (built-in)
       (which-func (:foreground ,blue :background nil :weight bold))
